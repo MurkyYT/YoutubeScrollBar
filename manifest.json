@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Horizontal Scrollbar Hider",
+    "description": "Youtube Horizontal Scrollbar Hider",
+    "version": "0.0.1",
+    "icons": {},
+    "action": {
+        "default_title": "Youtube Horizontal Scrollbar Hider"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "foreground.js"
+            ],
+            "matches": [
+                "https://www.youtube.com/watch?v=*"
+            ]
+        }
+    ]
+}
