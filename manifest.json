@@ -9,7 +9,7 @@
     },
     "permissions": [],
     "host_permissions": [
-        "*://*/*"
+        "*://www.youtube.com/*"
     ],
     "content_scripts": [
         {
