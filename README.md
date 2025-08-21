@@ -5,7 +5,7 @@ A small extension to fix the annoyance of the popping up horizontal scrollbar in
 All it does is add ```ytd-app { overflow-x: hidden !important; }``` style to the webpage
 
 ## Installation
-Download the latest ```Source code`` archive from the releases and then follow the bellow steps for your browser
+Download the latest ```Source code``` archive from the releases and then follow the bellow steps for your browser
 
 #### Chrome
 1. Unpack the Extension
