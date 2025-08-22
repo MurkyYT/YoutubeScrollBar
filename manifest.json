@@ -3,7 +3,7 @@
     "name": "Youtube Horizontal Scrollbar Hider",
     "description": "Youtube Horizontal Scrollbar Hider",
     "homepage_url": "https://github.com/MurkyYT/YoutubeScrollBar",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "icons": {},
     "action": {
         "default_title": "Youtube Horizontal Scrollbar Hider"
@@ -18,7 +18,7 @@
                 "foreground.js"
             ],
             "matches": [
-                "https://www.youtube.com/watch?v=*"
+                "*://www.youtube.com/*"
             ]
         }
     ]
