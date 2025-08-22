@@ -24,4 +24,4 @@ Download the latest ```Source code``` archive from the releases and then follow 
 4. Load the Unpacked Extension
 5. Should be it!
 #### Firefox
-Compitabillity wasn't checked, support for manifest version 3 should be enabled, and then follow steps for Chrome and Edge
+Compatibility wasn't checked, support for manifest version 3 should be enabled, and then follow steps for Chrome and Edge
