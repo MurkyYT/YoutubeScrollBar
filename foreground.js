@@ -1,10 +1,8 @@
 const style = document.createElement("style");
 style.id = 'ytd-scrollbar-hider'
-style.textContent = `ytd-app {overflow-x: hidden !important;}`;
+style.textContent = `ytd-app[fullscreen] {overflow-x: hidden !important;}`;
 
-function hasStyle(id) {
-  return !!document.head.querySelector(`#${id}`);
-}
+const hasStyle = id => Boolean(document.getElementById(id));
 
 function injectStyle(href)
 {
@@ -27,14 +25,13 @@ function injectStyle(href)
 const observeUrlChange = () => {
     let oldHref = document.location.href;
     injectStyle(oldHref);
-    const body = document.querySelector('body');
     const observer = new MutationObserver(mutations => {
         if (oldHref !== document.location.href) {
             oldHref = document.location.href;
             injectStyle(oldHref);
         }
     });
-    observer.observe(body, { childList: true, subtree: true });
+    observer.observe(document.body, { childList: true, subtree: true });
 };
 
 window.onload = observeUrlChange;
